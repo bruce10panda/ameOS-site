@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+.header {
+    background-color: rgba(0, 149, 255, 0.25);
+    color: #fff;
+    margin-top: 2vh;
+    width: 80vw;
+    height: 8vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 40px;
+    padding: 20px;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    width: 250px;
+    height: auto;
+}
+
+.section1 {
+    height: 100vh;
+    background-image: url(assets/backgroundblobs.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+            align-items: center;
+
+}
+
+.section1 img {
+    margin: 100px;
+}
+
+.mockupsection1 {
+    height: 650px;
+}
+
+.logosection1 {
+    height: 400px;
+}
+
+.section2 {
+    height: 100vh;
+    background: linear-gradient(to bottom, #181818, #0B153E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    height: 1000px;
+    width: 1000px;
+    background-image: radial-gradient(closest-side, #184246, #00000000);
+    position: absolute;
+    bottom: 0;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+}
+
+.contentinside {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.voidyimage {
+    position: relative;
+    z-index: 2;
+}
+
+.section3 {
+    height: 100vh;
+    background-image: url(assets/backgroundblobs.png);
+    background-repeat: no-repeat;
+}
