@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .header {
@@ -18,6 +18,7 @@ body {
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 .header .logo {
@@ -31,7 +32,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-            align-items: center;
+    align-items: center;
 
 }
 
@@ -55,18 +56,6 @@ body {
     align-items: center;
 }
 
-.color {
-    height: 1000px;
-    width: 1000px;
-    background-image: radial-gradient(closest-side, #184246, #00000000);
-    position: absolute;
-    bottom: 0;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
 .content {
     position: relative;
 }
@@ -82,8 +71,121 @@ body {
     z-index: 2;
 }
 
+.voidyimage img {
+    width: 28vw;
+    height: auto;
+}
+
+.voidylogo img {
+    height: auto;
+    width: 23vw;
+}
+
 .section3 {
     height: 100vh;
     background-image: url(assets/backgroundblobs.png);
     background-repeat: no-repeat;
+}
+
+.containersection3 {
+    text-align: center;
+}
+
+.apps {
+    width: 65vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20vh);
+}
+
+#mobile {
+    display: none;
+}
+
+@media screen and (max-aspect-ratio: 5/3) {
+
+    .logocontainer {
+        display: flex;
+        justify-content: center;
+    }
+  
+      .section1 img {
+        margin: 0px;
+      }
+  
+      .mockupsection1 {
+        height: 60vh;
+      }
+  
+      .logosection1 {
+        padding-top: 0vh;
+        height: 30vh;
+      }
+
+    .voidylogo img, .voidyimage img {
+        width: 40vw;
+    }
+
+    .apps {
+        transform: translate(-50%, 20vh);
+        height: 70vh;
+        width: auto;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #normal {
+        display: none;
+    }
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+    .header {
+        display: none;
+    }
+
+    .logocontainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section1 {
+        flex-direction: column;
+      }
+  
+      .section1 img {
+        margin: 0px;
+      }
+  
+      .mockupsection1 {
+        height: 50vh;
+        width: auto;
+      }
+  
+      .logosection1 {
+        padding-top: 0vh;
+        height: 25vh;
+        width: auto;
+      }
+
+    .voidylogo img, .voidyimage img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .apps {
+        transform: translate(-50%, 35vh);
+        width: 90vw;
+        height: auto;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #normal {
+        display: none;
+    }
 }
