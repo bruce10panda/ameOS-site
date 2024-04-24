@@ -175,7 +175,7 @@ body {
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-aspect-ratio: 5/3) {
+@media screen and (max-width: 1000px) {
 
     .logocontainer {
         display: flex;
@@ -224,7 +224,7 @@ body {
     }
 }
 
-@media screen and (max-aspect-ratio: 10/16) {
+@media screen and (max-width: 800px) {
     .header {
         display: none;
     }
