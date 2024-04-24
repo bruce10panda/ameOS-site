@@ -115,14 +115,10 @@ body {
 }
 
 .apps {
-    width: 65vw;
+    height: 50vh;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 20vh);
-}
-
-#mobile {
-    display: none;
 }
 
 .section4 {
@@ -159,13 +155,14 @@ body {
     border-radius: 90px;
     font-family: "dm-sans";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
     transition: transform 0.2s ease-in-out;
 }
 
 .containersection4 button:hover {
     transform: scale(1.05);
+    background-image: linear-gradient(0deg, rgba(130,172,255,1) 0%, rgba(0,148,255,1) 100%);;
 }
 
 .containersection4 p {
@@ -175,7 +172,7 @@ body {
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-aspect-ratio: 5/3) {
 
     .logocontainer {
         display: flex;
@@ -201,30 +198,20 @@ body {
 
     .apps {
         transform: translate(-50%, 20vh);
-        height: 70vh;
+        height: 50vh;
         width: auto;
     }
 
-    #mobile {
-        display: block;
-        width: 90vw;
-        height: auto;
-    }
-
-    #normal {
+    .section3 {
         display: none;
     }
 
-    .section3 {
-        height: 40vh;
-    }
-
     .containersection4 button {
-        width: 80vw;
+        width: 40vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (orientation: portrait){
     .header {
         display: none;
     }
@@ -264,13 +251,7 @@ body {
         height: auto;
     }
 
-    #mobile {
-        display: block;
-        width: 90vw;
-        height: auto;
-    }
-
-    #normal {
+    .section3 {
         display: none;
     }
 }
