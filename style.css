@@ -92,8 +92,8 @@ body {
 }
 
 .color {
-    height: 100vh;
-    width: 100vh;
+    height: min(100vh, 100vw);
+    width: min(100vh, 100vw);
     background-image: radial-gradient(closest-side, rgba(0, 255, 191, 0.247), #00000000);
     position: absolute;
     bottom: 0;
@@ -161,6 +161,7 @@ body {
 }
 
 .containersection4 button:hover {
+    cursor: pointer;
     transform: scale(1.05);
     background-image: linear-gradient(0deg, rgba(130,172,255,1) 0%, rgba(0,148,255,1) 100%);;
 }
@@ -243,6 +244,18 @@ body {
     .voidylogo img, .voidyimage img {
         width: 80vw;
         height: auto;
+    }
+
+    .color {
+        height: min(100vh, 100vw);
+        width: min(100vh, 100vw);
+        background-image: radial-gradient(closest-side, rgba(0, 255, 191, 0.247), #00000000);
+        position: absolute;
+        bottom: 0;
+        top: -0%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
     }
 
     .apps {

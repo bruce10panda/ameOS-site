@@ -34,7 +34,13 @@ body {
    transform: scale(1.1);
 }
 
-@media screen and (max-aspect-ratio: 9/16) {
+@media screen and (max-aspect-ratio: 5/3) {
+    .image-container img {
+        max-width: 45vw;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait){
 
 .image-container img {
     max-width: 90vw;
